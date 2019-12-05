@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   xmlns:tools="http://schemas.android.com/tools"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="370dp" app:cardCornerRadius="20dp"
+                                   app:cardElevation="20dp" android:layout_margin="8dp" android:id="@+id/cardView">
+    app:cardCornerRadius="50dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+                android:layout_width="415dp"
+                android:layout_height="256dp" tools:srcCompat="@tools:sample/backgrounds/scenic[14]"
+                android:id="@+id/ivPersona" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tvNombre" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="5dp" android:scaleType="centerCrop"
+                app:layout_constraintHorizontal_bias="0.545"/>
+        <TextView
+                android:text="Nombre"
+                android:layout_width="210dp"
+                android:layout_height="80dp"
+                android:id="@+id/tvNombre" android:layout_marginEnd="218dp"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintTop_toBottomOf="@+id/ivPersona"
+                android:textSize="18sp"
+                app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="16dp"/>
+        <TextView
+                android:text="Genero"
+                android:layout_width="119dp"
+                android:layout_height="42dp"
+                android:id="@+id/tvGenero" app:layout_constraintStart_toEndOf="@+id/tvNombre"
+                android:layout_marginStart="16dp" android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/ivPersona" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp" android:layout_marginBottom="80dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintVertical_bias="0.0" android:textSize="18sp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
